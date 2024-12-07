@@ -1,5 +1,5 @@
 {
-  "extends": "@nerve/config-typescript/react-library.json",
+  "extends": "@nerve/config-typescript/react-lib.json",
   "compilerOptions": {
     "outDir": "dist"
   },

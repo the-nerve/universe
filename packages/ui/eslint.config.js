@@ -1,4 +1,4 @@
-import { config } from "@nerve/config-eslint/react-internal";
+import { config } from "@nerve/config-eslint/react-lib";
 
 /** @type {import("eslint").Linter.Config} */
 export default config;
