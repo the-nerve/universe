@@ -1,7 +1,16 @@
 {
+  // ESLint Config Settings
   "eslint.workingDirectories": [
     {
       "mode": "auto"
     }
-  ]
+  ],
+  // Typescript Config Settings
+  "typescript.preferences.importModuleSpecifier": "shortest",
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+
+  // Editor Config Settings
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.rulers": [120] // Set's the ruler to eslint's mex-len and prettier's printWidth
 }

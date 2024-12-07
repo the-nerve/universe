@@ -1,0 +1,17 @@
+# --------------------------------------------------------------------------------------------------
+# The Nerve's Editor Config file sets consistent format behavior across many text editors.
+# Prettier can automatically pick up this file's settings and use it for formatting.
+#
+# Learn more:
+# Prettier options: https://prettier.io/docs/en/options.html
+# EditorConfig docs: https://EditorConfig.org
+# --------------------------------------------------------------------------------------------------
+root = true
+
+[*]
+end_of_line = lf
+trim_trailing_whitespace = true
+insert_final_newline = true
+indent_style = space
+indent_size = 2
+max_line_length = 120
