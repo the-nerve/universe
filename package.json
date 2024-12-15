@@ -3,6 +3,8 @@
   "private": true,
   "scripts": {
     "build": "turbo build",
+    "clean:root": "rm -rf node_modules",
+    "clean:reset": "turbo clean --parallel && turbo clean:root && pnpm install",
     "dev": "turbo dev",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
