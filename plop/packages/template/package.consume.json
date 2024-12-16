@@ -1,0 +1,30 @@
+{
+  "name": "@nerve/-- PLOP PACKAGE NAME HERE --",
+  "version": "1.0.0",
+  "description": "-- PLOP PACKAGE DESCRIPTION HERE --",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "clean": "rm -rf node_modules; rm -rf dist",
+    "check:lint": "eslint . --max-warnings 0",
+    "check:types": "tsc --noEmit",
+    "fix:lint": "eslint . --fix",
+    "test": "TZ=UTC vitest run",
+    "test:cov": "TZ=UTC vitest run --coverage"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@nerve/config-eslint": "workspace:*",
+    "@nerve/config-typescript": "workspace:*",
+    "@types/node": "20.16.5",
+    "typescript": "5.5.4",
+    "vitest": "2.1.6"
+  },
+  "exports": {
+    "./v1": {
+      "import": {
+        "default": "./exports/v1/v1.ts"
+      }
+    }
+  }
+}

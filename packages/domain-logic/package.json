@@ -1,0 +1,36 @@
+{
+  "name": "@nerve/domain-logic",
+  "version": "1.0.0",
+  "description": "Core domain logic and utilities for The Nerve",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsup --minify",
+    "build:dev": "tsup --silent",
+    "clean": "rm -rf node_modules; rm -rf dist",
+    "check:lint": "eslint . --max-warnings 0",
+    "check:types": "tsc --noEmit",
+    "fix:lint": "eslint . --fix",
+    "test": "TZ=UTC vitest run"
+  },
+  "dependencies": {
+    "date-fns": "^4.1.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@nerve/config-eslint": "workspace:*",
+    "@nerve/config-typescript": "workspace:*",
+    "@types/node": "20.16.5",
+    "tsup": "8.3.5",
+    "typescript": "5.5.4",
+    "vitest": "2.1.6"
+  },
+  "exports": {
+    "./v1": {
+      "import": {
+        "types": "./dist/v1/v1.d.ts",
+        "default": "./dist/v1/v1.js"
+      }
+    }
+  }
+}
