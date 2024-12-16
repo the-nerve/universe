@@ -17,7 +17,7 @@ This Turborepo includes the following packages/apps:
 ### Apps and Packages
 
 - `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
+- `@nerve/ui-components`: a stub React component library shared by both `web` and `docs` applications
 - `@nerve/config-eslint`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `@nerve/config-typescript`: `tsconfig.json`s used throughout the monorepo
 

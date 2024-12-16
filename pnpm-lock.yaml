@@ -20,9 +20,9 @@ importers:
 
   apps/web:
     dependencies:
-      '@repo/ui':
+      '@nerve/ui-components':
         specifier: workspace:*
-        version: link:../../packages/ui
+        version: link:../../packages/ui-components
       next:
         specifier: ^15.0.0
         version: 15.0.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -96,7 +96,7 @@ importers:
 
   packages/config-typescript: {}
 
-  packages/ui:
+  packages/ui-components:
     dependencies:
       react:
         specifier: ^19.0.0
