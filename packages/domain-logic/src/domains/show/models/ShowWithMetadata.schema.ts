@@ -1,6 +1,7 @@
 import { z } from "zod";
 import { showSchema } from "./Show.schema.js";
 import { SHOW_RATING } from "../constants/Show.constants.js";
+import { locationSchema } from "../../location/Location.schema.js";
 
 export const showWithMetadataSchema = showSchema.extend({
   duration: z
