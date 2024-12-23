@@ -172,7 +172,7 @@ export const getShowStatus = <T extends Show>(show: T) => {
  */
 export const createGetShowPath = <T extends Show>(baseSlug: string) => {
   const getShowPath = ({ slug, season }: T) => {
-    return `/${baseSlug}/${slug}/${season.slug}`;
+    return `/${baseSlug}/${season.slug}/${slug}`;
   };
 
   return { getShowPath };
